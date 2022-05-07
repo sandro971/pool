@@ -1,0 +1,122 @@
+
+section.remote{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1em;
+    gap: 1em;
+    max-width: 20em;
+    place-items: center;
+    margin: auto;
+    
+.button{
+    padding: .5em 1em;
+    border: 1px solid white;
+    background-color: $transparent-bg;
+    border-radius: .5em;
+    display: flex;
+    align-items: center;
+    width: calc(50% - 2.7em);
+    flex-flow: column nowrap;
+    text-align: center;
+    position: relative;
+
+    
+    .button--small-rounded{
+        
+    }
+    
+    &--on::before{
+        content: "";
+        width: .5em;
+        height: .5em;
+        background-color: #FA9595;
+        border-radius: 100%;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+
+    &:active{
+        background-color: #7878789c;
+        cursor: pointer;
+    }
+
+    &::before{
+        background: linear-gradient(to right, red, purple);
+    }
+
+    &--wide{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: calc(100% - 2em);
+    }
+
+    &.pool-state{
+        color: white;
+    }
+    h3{
+        color: white;
+        margin: .5em 0;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .key{
+        align-items: center;
+        h2{
+            color: $blue2;
+            margin: .5em 0;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+    }
+
+    .icon {
+        padding: .25em;
+    }
+
+    .value{
+        color: white;
+        b{
+            font-size: 2em;
+        }
+    }
+
+    .info{
+        font-size: 1em;
+        color: #cecece;
+        font-size: .7em;
+        &--2{
+            margin: .5em 0;
+        }
+        &--text-left{
+            text-align: left;
+        }
+
+        strong{
+            &.state--on{
+                color: $green;
+            }
+        }
+    }
+
+    .input{
+        display: flex;
+        flex-flow: row nowrap;
+        color: white;
+        font-size: .8em;
+        align-items: center;
+        gap: .5em;
+
+        label{
+
+        }
+
+        .switch{
+            font-size: 2em;
+            color: $blue;
+        }
+    }
+}
+}

@@ -1,0 +1,189 @@
+* {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.k-bg {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2em);
+  height: calc(100% - 2em);
+  z-index: 100;
+  background-color: #393939da;
+}
+.modale .container {
+  border: 1px solid white;
+  background-color: #393939da;
+  border-radius: 0.5em;
+  color: white;
+  padding: 1em;
+  max-width: 18em;
+  position: relative;
+}
+.modale .container h1 {
+  font-weight: 300;
+  font-size: 1.25em;
+  color: #96E2F8;
+  margin: 0;
+  text-align: center;
+}
+.modale .container p {
+  color: #cecece;
+  font-size: 0.8em;
+}
+.modale .container .button--small-rounded {
+  line-height: 1.5em;
+}
+.modale .container .button:active {
+  opacity: 0.6;
+}
+.modale .container .close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 1em;
+  height: 1em;
+}
+
+.button--small-rounded {
+  background-color: #30ADD4;
+  border-radius: 1em;
+  color: white;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  display: block;
+  text-align: center;
+  padding: 0.5em 1.5em;
+}
+
+section.remote {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em;
+  gap: 1em;
+  max-width: 20em;
+  place-items: center;
+  margin: auto;
+}
+section.remote .button {
+  padding: 0.5em 1em;
+  border: 1px solid white;
+  background-color: #7878786e;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  width: calc(50% - 2.7em);
+  flex-flow: column nowrap;
+  text-align: center;
+  position: relative;
+}
+section.remote .button--on::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #FA9595;
+  border-radius: 100%;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+section.remote .button:active {
+  background-color: #7878789c;
+  cursor: pointer;
+}
+section.remote .button::before {
+  background: linear-gradient(to right, red, purple);
+}
+section.remote .button--wide {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: calc(100% - 2em);
+}
+section.remote .button.pool-state {
+  color: white;
+}
+section.remote .button h3 {
+  color: white;
+  margin: 0.5em 0;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+section.remote .button .key {
+  align-items: center;
+}
+section.remote .button .key h2 {
+  color: #96E2F8;
+  margin: 0.5em 0;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+section.remote .button .icon {
+  padding: 0.25em;
+}
+section.remote .button .value {
+  color: white;
+}
+section.remote .button .value b {
+  font-size: 2em;
+}
+section.remote .button .info {
+  font-size: 1em;
+  color: #cecece;
+  font-size: 0.7em;
+}
+section.remote .button .info--2 {
+  margin: 0.5em 0;
+}
+section.remote .button .info--text-left {
+  text-align: left;
+}
+section.remote .button .info strong.state--on {
+  color: #C3F980;
+}
+section.remote .button .input {
+  display: flex;
+  flex-flow: row nowrap;
+  color: white;
+  font-size: 0.8em;
+  align-items: center;
+  gap: 0.5em;
+}
+section.remote .button .input .switch {
+  font-size: 2em;
+  color: #30ADD4;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  font-size: 1.25em;
+  font-weight: 100;
+  color: white;
+}
+header .ico {
+  width: 4em;
+  height: 4em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+/*# sourceMappingURL=main.css.map */

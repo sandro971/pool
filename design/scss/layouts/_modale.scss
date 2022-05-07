@@ -1,0 +1,57 @@
+.modale{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2em);
+    height: calc(100% - 2em);
+    z-index: 100;
+    background-color: $transparent-bg2;
+
+    .container{
+        border: 1px solid white;
+        background-color: $transparent-bg2;
+        border-radius: .5em;
+        color: white;
+        padding: 1em;
+        max-width: 18em;
+        position: relative;
+
+        h1{
+            font-weight: 300;
+            font-size: 1.25em;
+            color: $blue2;
+            margin: 0;
+            text-align: center;
+        }
+
+        p{
+            color: $grey;
+            font-size: .8em;
+        }
+
+        &--center{
+            
+        }
+
+        .button--small-rounded{
+            line-height: 1.5em;
+        }
+
+        .button:active{
+            opacity: .6;
+        }
+
+        .close{
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            width: 1em;
+            height: 1em;
+        }
+    }
+}
